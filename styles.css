@@ -57,10 +57,6 @@ h1 {
   max-width: 60ch;
 }
 
-.hero-btn {
-  margin-top: 16px;
-}
-
 .calculator {
   background: var(--card);
   border-radius: var(--radius);
@@ -142,8 +138,7 @@ h2 {
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
 }
 
-input[type="radio"],
-input[type="checkbox"] {
+input[type="radio"] {
   accent-color: var(--primary);
 }
 
@@ -228,11 +223,6 @@ input[type="checkbox"] {
 #resultSummary {
   margin: 14px 0 0;
   padding-left: 20px;
-  color: #344054;
-}
-
-.disclaimer {
-  margin-top: 16px;
   color: #344054;
 }
 

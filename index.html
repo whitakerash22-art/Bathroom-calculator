@@ -15,12 +15,15 @@
   <body>
     <main class="page">
       <section class="hero container">
+        <p class="eyebrow">Dallas-Fort Worth Bathroom Remodeling</p>
         <h1>What Will Your Bathroom Remodel Cost in DFW?</h1>
-        <p class="subtitle">Get a realistic price range in under 2 minutes.</p>
-        <button id="startCalculatorBtn" class="btn btn-primary hero-btn" type="button">Start Calculator</button>
+        <p class="subtitle">
+          Use our quick calculator to estimate a realistic remodel budget based on scope,
+          finishes, and timeline.
+        </p>
       </section>
 
-      <section class="calculator container" aria-label="Bathroom remodel cost calculator" id="calculatorSection">
+      <section class="calculator container" aria-label="Bathroom remodel cost calculator">
         <div class="progress-wrap" aria-hidden="true">
           <div class="progress-bar"><span id="progressFill"></span></div>
           <p id="stepLabel">Step 1 of 8</p>
@@ -29,7 +32,7 @@
         <form id="calculatorForm" novalidate>
           <div class="step active" data-step="1">
             <h2>Bathroom Type</h2>
-            <p>What type of bathroom are you planning to remodel?</p>
+            <p>Select the bathroom you want to remodel.</p>
             <div class="field-grid">
               <label class="option-card">
                 <input type="radio" name="bathroomType" value="Powder Room" required />
@@ -48,76 +51,72 @@
 
           <div class="step" data-step="2">
             <h2>Project Level</h2>
-            <p>What level of remodel are you considering?</p>
+            <p>Choose the level that best matches your renovation goals.</p>
             <div class="field-grid">
               <label class="option-card">
                 <input type="radio" name="projectLevel" value="Cosmetic" required />
-                <span>Light cosmetic update</span>
+                <span>Cosmetic Refresh</span>
               </label>
               <label class="option-card">
                 <input type="radio" name="projectLevel" value="Standard" />
-                <span>Standard remodel</span>
+                <span>Standard Remodel</span>
               </label>
               <label class="option-card">
                 <input type="radio" name="projectLevel" value="Full" />
-                <span>Full renovation</span>
+                <span>Full Renovation</span>
               </label>
             </div>
           </div>
 
           <div class="step" data-step="3">
-            <h2>Layout</h2>
-            <p>Will you be changing the layout or moving plumbing?</p>
+            <h2>Layout Changes</h2>
+            <p>Will you move plumbing fixtures or walls?</p>
             <div class="field-grid">
               <label class="option-card">
-                <input type="radio" name="layoutChanges" value="No, keeping everything in place" required />
-                <span>No, keeping everything in place</span>
+                <input type="radio" name="layoutChanges" value="No layout changes" required />
+                <span>No Layout Changes</span>
               </label>
               <label class="option-card">
-                <input type="radio" name="layoutChanges" value="Maybe minor adjustments" />
-                <span>Maybe minor adjustments</span>
+                <input type="radio" name="layoutChanges" value="Minor layout changes" />
+                <span>Minor Layout Changes</span>
               </label>
               <label class="option-card">
-                <input type="radio" name="layoutChanges" value="Yes, moving plumbing" />
-                <span>Yes, moving plumbing</span>
+                <input type="radio" name="layoutChanges" value="Major layout changes" />
+                <span>Major Layout Changes</span>
               </label>
             </div>
           </div>
 
           <div class="step" data-step="4">
             <h2>Scope</h2>
-            <p>What are you planning to update?</p>
+            <p>How much of the bathroom are you planning to update?</p>
             <div class="field-grid">
               <label class="option-card">
-                <input type="checkbox" name="scope" value="Shower / Tub" required data-group-required="scope" />
-                <span>Shower / Tub</span>
+                <input type="radio" name="scope" value="Surface updates" required />
+                <span>Surface Updates</span>
               </label>
               <label class="option-card">
-                <input type="checkbox" name="scope" value="Floor & Wall Tile" data-group-required="scope" />
-                <span>Floor &amp; Wall Tile</span>
+                <input type="radio" name="scope" value="Partial gut" />
+                <span>Partial Gut</span>
               </label>
               <label class="option-card">
-                <input type="checkbox" name="scope" value="Vanity & Counter" data-group-required="scope" />
-                <span>Vanity &amp; Counter</span>
-              </label>
-              <label class="option-card">
-                <input type="checkbox" name="scope" value="Fixtures & Lighting" data-group-required="scope" />
-                <span>Fixtures &amp; Lighting</span>
+                <input type="radio" name="scope" value="Full gut" />
+                <span>Full Gut</span>
               </label>
             </div>
           </div>
 
           <div class="step" data-step="5">
             <h2>Finish Level</h2>
-            <p>What finish level are you aiming for?</p>
+            <p>What type of materials and fixtures do you prefer?</p>
             <div class="field-grid">
               <label class="option-card">
-                <input type="radio" name="finishLevel" value="Practical" required />
-                <span>Practical</span>
+                <input type="radio" name="finishLevel" value="Value" required />
+                <span>Value</span>
               </label>
               <label class="option-card">
                 <input type="radio" name="finishLevel" value="Mid-range" />
-                <span>Mid-range</span>
+                <span>Mid-Range</span>
               </label>
               <label class="option-card">
                 <input type="radio" name="finishLevel" value="Premium" />
@@ -128,7 +127,7 @@
 
           <div class="step" data-step="6">
             <h2>Timeline</h2>
-            <p>When are you hoping to start?</p>
+            <p>When are you hoping to start your remodel?</p>
             <div class="field-grid">
               <label class="option-card">
                 <input type="radio" name="timeline" value="ASAP" required />
@@ -136,18 +135,18 @@
               </label>
               <label class="option-card">
                 <input type="radio" name="timeline" value="1-3 months" />
-                <span>1–3 months</span>
+                <span>1–3 Months</span>
               </label>
               <label class="option-card">
                 <input type="radio" name="timeline" value="3-6 months" />
-                <span>3–6 months</span>
+                <span>3–6 Months</span>
               </label>
             </div>
           </div>
 
           <div class="step" data-step="7">
-            <h2>Budget</h2>
-            <p>What budget range feels realistic?</p>
+            <h2>Target Budget</h2>
+            <p>Pick a budget range you feel comfortable with.</p>
             <div class="field-grid">
               <label class="option-card">
                 <input type="radio" name="budget" value="Under $15k" required />
@@ -165,8 +164,8 @@
           </div>
 
           <div class="step" data-step="8">
-            <h2>Get Your Estimate</h2>
-            <p>Enter your info to see your results.</p>
+            <h2>Get Your Personalized Estimate</h2>
+            <p>Enter your info to unlock your estimated investment range.</p>
             <div class="input-grid">
               <label>
                 Name
@@ -192,18 +191,10 @@
         </form>
 
         <section id="results" class="results hidden" aria-live="polite">
-          <h2>Your Estimated Bathroom Remodel Range</h2>
-          <p>Based on your selections, your project will likely fall between:</p>
-          <p class="range" id="resultRange">$XX,XXX – $XX,XXX</p>
-          <ul id="resultSummary" class="results-bullets">
-            <li>Bathroom size and layout</li>
-            <li>Plumbing changes</li>
-            <li>Tile scope and finishes</li>
-            <li>Fixture and glass selections</li>
-          </ul>
-          <p id="resultExplanation" class="disclaimer">
-            This is a planning range. Final pricing depends on layout, selections, and site conditions.
-          </p>
+          <h2>Your Estimated Bathroom Remodel Cost</h2>
+          <p class="range" id="resultRange"></p>
+          <p id="resultExplanation"></p>
+          <ul id="resultSummary"></ul>
           <button class="btn btn-primary cta">Book Your Free Walkthrough</button>
         </section>
       </section>
