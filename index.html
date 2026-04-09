@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DFW Bathroom Remodel Cost Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero container">
+        <p class="eyebrow">Dallas-Fort Worth Bathroom Remodeling</p>
+        <h1>What Will Your Bathroom Remodel Cost in DFW?</h1>
+        <p class="subtitle">
+          Use our quick calculator to estimate a realistic remodel budget based on scope,
+          finishes, and timeline.
+        </p>
+      </section>
+
+      <section class="calculator container" aria-label="Bathroom remodel cost calculator">
+        <div class="progress-wrap" aria-hidden="true">
+          <div class="progress-bar"><span id="progressFill"></span></div>
+          <p id="stepLabel">Step 1 of 8</p>
+        </div>
+
+        <form id="calculatorForm" novalidate>
+          <div class="step active" data-step="1">
+            <h2>Bathroom Type</h2>
+            <p>Select the bathroom you want to remodel.</p>
+            <div class="field-grid">
+              <label class="option-card">
+                <input type="radio" name="bathroomType" value="Powder Room" required />
+                <span>Powder Room</span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="bathroomType" value="Guest Bathroom" />
+                <span>Guest Bathroom</span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="bathroomType" value="Primary Bathroom" />
+                <span>Primary Bathroom</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="step" data-step="2">
+            <h2>Project Level</h2>
+            <p>Choose the level that best matches your renovation goals.</p>
+            <div class="field-grid">
+              <label class="option-card">
+                <input type="radio" name="projectLevel" value="Cosmetic" required />
+                <span>Cosmetic Refresh</span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="projectLevel" value="Standard" />
+                <span>Standard Remodel</span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="projectLevel" value="Full" />
+                <span>Full Renovation</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="step" data-step="3">
+            <h2>Layout Changes</h2>
+            <p>Will you move plumbing fixtures or walls?</p>
+            <div class="field-grid">
+              <label class="option-card">
+                <input type="radio" name="layoutChanges" value="No layout changes" required />
+                <span>No Layout Changes</span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="layoutChanges" value="Minor layout changes" />
+                <span>Minor Layout Changes</span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="layoutChanges" value="Major layout changes" />
+                <span>Major Layout Changes</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="step" data-step="4">
+            <h2>Scope</h2>
+            <p>How much of the bathroom are you planning to update?</p>
+            <div class="field-grid">
+              <label class="option-card">
+                <input type="radio" name="scope" value="Surface updates" required />
+                <span>Surface Updates</span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="scope" value="Partial gut" />
+                <span>Partial Gut</span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="scope" value="Full gut" />
+                <span>Full Gut</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="step" data-step="5">
+            <h2>Finish Level</h2>
+            <p>What type of materials and fixtures do you prefer?</p>
+            <div class="field-grid">
+              <label class="option-card">
+                <input type="radio" name="finishLevel" value="Value" required />
+                <span>Value</span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="finishLevel" value="Mid-range" />
+                <span>Mid-Range</span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="finishLevel" value="Premium" />
+                <span>Premium</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="step" data-step="6">
+            <h2>Timeline</h2>
+            <p>When are you hoping to start your remodel?</p>
+            <div class="field-grid">
+              <label class="option-card">
+                <input type="radio" name="timeline" value="ASAP" required />
+                <span>ASAP</span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="timeline" value="1-3 months" />
+                <span>1–3 Months</span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="timeline" value="3-6 months" />
+                <span>3–6 Months</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="step" data-step="7">
+            <h2>Target Budget</h2>
+            <p>Pick a budget range you feel comfortable with.</p>
+            <div class="field-grid">
+              <label class="option-card">
+                <input type="radio" name="budget" value="Under $15k" required />
+                <span>Under $15k</span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="budget" value="$15k-$25k" />
+                <span>$15k–$25k</span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="budget" value="$25k+" />
+                <span>$25k+</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="step" data-step="8">
+            <h2>Get Your Personalized Estimate</h2>
+            <p>Enter your info to unlock your estimated investment range.</p>
+            <div class="input-grid">
+              <label>
+                Name
+                <input type="text" name="name" autocomplete="name" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" autocomplete="email" required />
+              </label>
+              <label>
+                Phone
+                <input type="tel" name="phone" autocomplete="tel" required />
+              </label>
+            </div>
+          </div>
+
+          <p class="error" id="formError" role="alert" aria-live="polite"></p>
+
+          <div class="actions">
+            <button type="button" id="backBtn" class="btn btn-secondary">Back</button>
+            <button type="button" id="nextBtn" class="btn btn-primary">Next</button>
+          </div>
+        </form>
+
+        <section id="results" class="results hidden" aria-live="polite">
+          <h2>Your Estimated Bathroom Remodel Cost</h2>
+          <p class="range" id="resultRange"></p>
+          <p id="resultExplanation"></p>
+          <ul id="resultSummary"></ul>
+          <button class="btn btn-primary cta">Book Your Free Walkthrough</button>
+        </section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
